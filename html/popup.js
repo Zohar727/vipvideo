@@ -7,7 +7,7 @@ function click(e) {
     chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
         //console.log(tabs[0].url);
         //alert(tabs[0].url);
-        window.open('http://www.yydy8.com/common/?url='+tabs[0].url);
+        window.open('http://e.zohar.com.cn/vip_video/index.html'+"?"+tabs[0].url);
         //localStorage.url=tabs[0].url;
         // document.write(localStorage.url);
         // var newWindow = window.open('http://localhost:63342/vip_video/index.html');
@@ -24,7 +24,7 @@ window.onload =function(){
         height : 125
     });
     chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
-        qrcode.makeCode('http://www.yydy8.com/common/?url='+tabs[0].url);
+        qrcode.makeCode('http://e.zohar.com.cn/vip_video/index.html'+"?"+tabs[0].url);
     });
 
 }

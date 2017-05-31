@@ -1,7 +1,7 @@
 
 function genericOnClick(info, tab) {
     chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
-        window.open('http://www.yydy8.com/common/?url='+tabs[0].url);
+        window.open('http://e.zohar.com.cn/vip_video/index.html'+"?"+tabs[0].url);
     });
 }
 
